@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+    <id>org.ksnip.ksnip</id>
+    <metadata_license>FSFAP</metadata_license>
+    <project_license>GPL-2.0+</project_license>
+    <developer_name>Damir Porobic</developer_name>
+    <name>ksnip</name>
+    <summary>Cross-Platform Screenshot tool with annotation features</summary>
+    <description>
+        <p>
+​        Ksnip is a Qt based cross-platform screenshot tool that provides many annotation features for your screenshots.
+​        </p>
+        <p>Features:</p>
+        <ul>
+            <li>Supports Linux (X11, Plasma Wayland and Gnome Wayland), Windows and macOS.</li>
+            <li>Taking screenshot of a custom rectangular area that can be drawn with mouse cursor.</li>
+            <li>Taking screenshot of last selected rectangular area without selecting again.</li>
+            <li>Taking screenshot of the screen/monitor where the mouse cursor is currently located.</li>
+            <li>Taking screenshot of full screen, including all screens/monitors.</li>
+            <li>Taking screenshot of window that currently has focus.</li>
+            <li>Taking screenshot of window under mouse cursor.</li>
+            <li>Take screenshot with or without mouse cursor.</li>
+            <li>Capture mouse cursor as annotation item that can be moved and deleted.</li>
+            <li>Customizable capture delay for all capture options.</li>
+            <li>Upload screenshots directly to imgur.com in anonymous or user mode.</li>
+            <li>Upload screenshots via custom user defined scripts.</li>
+            <li>Command line support, for taking screenshot and saving it to default location, filename and format.</li>
+            <li>Filename wildcards for Year ($Y), Month ($M), Day ($D), Time ($T) and Counter (multiple # characters for number with zero leading padding).</li>
+            <li>Print screenshot or save is to pdf/ps.</li>
+            <li>Annotate screenshots with pen, marker, rectangles, ellipses, texts and other tools.</li>
+            <li>Annotate screenshots with stickers and add custom stickers.</li>
+            <li>Add watermarks to captured images.</li>
+            <li>Global HotKeys for taking Screenshots (Currently only for Windows and X11).</li>
+            <li>Tabs for Screenshots and images.</li>
+            <li>Open existing images via dialog, drag-and-drop or paste from clipboard.</li>
+            <li>Run as single instance application (secondary instances send cli parameter to primary instance).</li>
+            <li>Pin Screenshots in Frameless windows that stay on top of other windows.</li>
+            <li>Many configuration options.</li>
+        </ul>
+    </description>
+    <launchable type="desktop-id">org.ksnip.ksnip.desktop</launchable>
+    <url type="homepage">http://ksnip.org</url>
+    <screenshots>
+        <screenshot type="default">
+            <caption>Main Window</caption>
+            <image>https://i.imgur.com/IXCsNl1.png</image>
+        </screenshot>
+        <screenshot>
+            <caption>Crop Window</caption>
+            <image>https://i.imgur.com/1aQZID6.png</image>
+        </screenshot>
+        <screenshot>
+            <caption>Snipping Window 1</caption>
+            <image>https://i.imgur.com/gXolSAI.png</image>
+        </screenshot>
+        <screenshot>
+            <caption>Snipping Window 2</caption>
+            <image>https://i.imgur.com/ATGeYvI.png</image>
+        </screenshot>
+        <screenshot>
+            <caption>Settings Dialog</caption>
+            <image>https://i.imgur.com/5YaVTV4.png</image>
+        </screenshot>
+        <screenshot>
+            <caption>Sticker Settings</caption>
+            <image>https://i.imgur.com/PCLxIUo.png</image>
+        </screenshot>
+        <screenshot>
+            <caption>Imgur History Links</caption>
+            <image>https://i.imgur.com/AQuHhDR.png</image>
+        </screenshot>
+    </screenshots>
+    <provides>
+        <id>ksnip</id>
+        <id>org.ksnip.ksnip.desktop</id>
+    </provides>
+    <update_contact>damir.porobic@gmx.com</update_contact>
+    <content_rating type="oars-1.0" />
+    <releases>
+        <release type="stable" version="1.7.3" date="2020-07-30T00:00:00Z">
+            <description>
+                <ul>
+                    <li>Provide ksnip flatpak.</li>
+                    <li>Changed: Install svg icon file in hicolor theme dir instead of usr/share/pixmaps/.</li>
+                </ul>
+            </description>
+        </release>
+        <release type="stable" version="1.7.2" date="2020-07-29T00:00:00Z">
+            <description>
+                <ul>
+                    <li>Changed: Stop upload script when process writes to stderr.</li>
+                    <li>Changed: Upload script uses regex to select output for clipboard.</li>
+                    <li>Fixed: Ksnip becomes unresponsive when file dropped into it.</li>
+                    <li>Fixed: Ksnip window always visible on screenshots on Gnome Wayland.</li>
+                    <li>Fixed: Selecting path in Snap via file-chooser sets home directory to /run/user/1000.</li>
+                    <li>Fixed: Snap not able to run custom upload script.</li>
+                    <li>Fixed: kImageAnnotator: Tests fail to build with shared library.</li>
+                </ul>
+            </description>
+        </release>
+    </releases>
+</component>

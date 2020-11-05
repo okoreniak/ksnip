@@ -1,0 +1,9 @@
+export BINARY_TYPE=app
+export TRAVIS_COMPILER=gcc
+export CXX=${CXX:-g++}
+export CXX_FOR_BUILD=${CXX_FOR_BUILD:-g++}
+export CC=${CC:-gcc}
+export CC_FOR_BUILD=${CC_FOR_BUILD:-gcc}
+source ci/scripts/bootstrap.sh
+source ci/scripts/setup.sh
+source ci/scripts/build.sh
