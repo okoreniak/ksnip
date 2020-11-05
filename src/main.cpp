@@ -67,7 +67,6 @@ void customMessageHandler(QtMsgType type, const QMessageLogContext &context, con
    qDebug() << txt;
 }
 
-
 int main(int argc, char** argv)
 {
     QApplication app(argc, argv);
