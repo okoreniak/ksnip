@@ -73,11 +73,12 @@ int main(int argc, char** argv)
     //qInstallMessageHandler(customMessageHandler);
     app.setAttribute(Qt::AA_UseHighDpiPixmaps);
     qDebug() << app.applicationDirPath() << " " << app.applicationFilePath();
-    app.setOrganizationName(QStringLiteral("ksnip"));
-    app.setOrganizationDomain(QStringLiteral("ksnip.ksnip.org"));
-    app.setApplicationName(QStringLiteral("ksnip"));
+    app.setOrganizationName(QStringLiteral("Phonexa"));
+    app.setOrganizationDomain(QStringLiteral("phonexa.com"));
+    app.setApplicationName(QStringLiteral("Phonexa Screenshoter"));
     app.setApplicationVersion(QStringLiteral(KSNIP_VERSION));
-    app.setDesktopFileName(QStringLiteral("org.ksnip.ksnip.desktop"));
+    app.setDesktopFileName(QStringLiteral("com.phonexa.desktop"));
+
 
     app.setStyle(KsnipConfigProvider::instance()->applicationStyle());
     KsnipConfig* mConfig = KsnipConfigProvider::instance();

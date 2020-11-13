@@ -5,13 +5,13 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
-	<string>ksnip</string>
+	<string>phonexa-screens</string>
 	<key>CFBundleGetInfoString</key>
 	<string>Cross-Platform Screenshot and Annotation Tool</string>
 	<key>CFBundleIconFile</key>
 	<string>ksnip.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.ksnip.ksnip</string>
+	<string>com.phonexa.phonexa-screens</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleLongVersionString</key>

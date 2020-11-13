@@ -1,114 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="500"
-   height="500"
-   viewBox="0 0 500.00001 500.00001"
-   id="svg6519"
-   version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="ksnip.svg">
-  <defs
-     id="defs6521" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="404.92889"
-     inkscape:cy="261.43414"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     units="px"
-     inkscape:window-width="1920"
-     inkscape:window-height="1019"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1" />
-  <metadata
-     id="metadata6524">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-552.36216)">
-    <rect
-       style="opacity:1;fill:#483737;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:6.69999981;stroke-dasharray:none;stroke-dashoffset:64.99999237;stroke-opacity:1"
-       id="rect4298"
-       width="450"
-       height="450"
-       x="25"
-       y="577.36218" />
-    <g
-       id="g4339"
-       transform="matrix(0.87499998,0,0,0.87499991,31.250001,100.29533)">
-      <path
-         inkscape:connector-curvature="0"
-         id="rect4152"
-         d="m 50,602.53831 200.05821,199.91499 0,-199.91499 -200.05821,0 z"
-         style="opacity:1;fill:#ffb900;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:6.69999981;stroke-dasharray:none;stroke-dashoffset:64.99999237;stroke-opacity:1" />
-      <path
-         inkscape:connector-curvature="0"
-         id="rect4152-3"
-         d="m 147.55824,700.17517 0,204.63216 L 249.94761,802.49125 147.55824,700.17517 Z"
-         style="opacity:1;fill:#f02e00;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:6.69999981;stroke-dasharray:none;stroke-dashoffset:64.99999237;stroke-opacity:1" />
-      <path
-         inkscape:connector-curvature="0"
-         id="rect4152-6"
-         d="m 250.05878,802.44716 -200.05819,199.91504 200.05819,0 0,-199.91504 z"
-         style="opacity:1;fill:#ff8900;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:6.69999981;stroke-dasharray:none;stroke-dashoffset:64.99999237;stroke-opacity:1" />
-      <path
-         inkscape:connector-curvature="0"
-         id="rect4152-3-7"
-         d="m 349.98265,702.37807 -100.02894,99.95734 100.02894,0 0,-99.95734 z"
-         style="opacity:1;fill:#008900;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:6.69999981;stroke-dasharray:none;stroke-dashoffset:64.99999237;stroke-opacity:1" />
-      <path
-         inkscape:connector-curvature="0"
-         id="rect4152-3-7-5"
-         d="m 450.00001,902.3022 -100.02895,-99.95734 0,99.95734 100.02895,0 z"
-         style="opacity:1;fill:#006c80;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:6.69999981;stroke-dasharray:none;stroke-dashoffset:64.99999237;stroke-opacity:1" />
-      <path
-         inkscape:connector-curvature="0"
-         id="rect4152-3-7-5-5"
-         d="m 449.99785,1002.157 -100.02895,-99.95739 0,99.95739 100.02895,0 z"
-         style="opacity:1;fill:#008052;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:6.69999981;stroke-dasharray:none;stroke-dashoffset:64.99999237;stroke-opacity:1" />
-      <path
-         inkscape:connector-curvature="0"
-         id="rect4152-3-7-5-6"
-         d="m 349.9559,902.30605 100.02894,99.95735 0,-99.95735 -100.02894,0 z"
-         style="opacity:1;fill:#00aa80;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:6.69999981;stroke-dasharray:none;stroke-dashoffset:64.99999237;stroke-opacity:1" />
-      <path
-         inkscape:connector-curvature="0"
-         id="rect4152-3-7-9"
-         d="m 349.95152,802.29544 100.02895,-99.95734 -100.02895,0 0,99.95734 z"
-         style="opacity:1;fill:#005680;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:6.69999981;stroke-dasharray:none;stroke-dashoffset:64.99999237;stroke-opacity:1" />
-      <path
-         inkscape:connector-curvature="0"
-         id="rect4152-3-7-9-1"
-         d="m 449.98179,602.36216 -100.02895,99.95734 100.02895,0 0,-99.95734 z"
-         style="opacity:1;fill:#008080;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:6.69999981;stroke-dasharray:none;stroke-dashoffset:64.99999237;stroke-opacity:1" />
-    </g>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#4D7EBF;}
+</style>
+<g>
+	<path class="st0" d="M251.6,356.9h0.5c3.7,0,8-0.5,11.7-0.5c38.8-3.7,71.7-22.8,94.5-51c22.8-27.6,34.5-64.3,30.8-102.5
+		c-3.7-38.8-22.8-71.7-51-94.5c-27.6-22.8-64.3-34.5-102.5-30.8c-38.8,3.7-71.7,22.8-94.5,51c-22.8,27.6-34.5,64.3-30.8,102.5
+		c1.6,14.9,5.3,28.7,10.6,41.4c10.1,23.9,27.6,42.5,42,64.3c14.3,21.2,23.9,46.7,26.6,73.8l0,0c0.5,3.7,0.5,6.9,0.5,10.6l0,0
+		c17.5-4.2,32.4-14.3,43.6-27.6C243.1,382.9,248.9,370.7,251.6,356.9 M289.8,167.8c-12.2-10.1-28.7-15.4-46.2-13.8
+		c-17,1.6-31.9,10.6-42,22.8c-10.1,12.2-15.4,28.7-13.8,46.2c1.6,17,10.6,31.9,22.8,42.5c12.2,10.1,28.7,15.4,46.2,13.8
+		c17-1.6,31.9-10.6,42.5-22.8c10.1-12.2,15.4-28.7,13.8-46.2C310.5,193.3,302,177.9,289.8,167.8 M228.2,1.1
+		C287.7-4.8,344,13.8,387,48.9s72.2,86.6,78.6,146.1c5.8,59.5-12.7,115.8-47.8,158.8c-28.1,35.1-67.4,61.1-113.1,72.8
+		c-3.2,4.8-6.9,9.6-10.6,14.3c-26,31.9-64.3,54.2-108.9,58.4h-1.6l0,0c-32.4,3.2-63.2-3.7-90.3-18.1c1.1-1.1,2.1-2.1,2.7-3.2
+		c13.3-16.5,20.7-37.7,18.6-60.5l0,0c-1.1-12.7-5.3-24.4-11.2-34.5c-0.5-0.5-0.5-1.1-1.1-1.6c-3.2-4.8-6.9-10.1-11.2-15.9
+		c-10.6-13.8-20.7-26.6-29.7-42c-14.3-25.5-23.9-54.2-27.1-85.5c-5.8-59.5,12.7-115.8,47.8-158.8C117.2,36.6,168.7,7.4,228.2,1.1"/>
+</g>
 </svg>
