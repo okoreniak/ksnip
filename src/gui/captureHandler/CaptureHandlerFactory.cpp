@@ -18,15 +18,12 @@
  */
 
 #include "CaptureHandlerFactory.h"
-#include <QDebug>
 
 ICaptureHandler * CaptureHandlerFactory::create(IImageAnnotator *imageAnnotator, IToastService *toastService, IClipboard *clipboard, QWidget *parent)
 {
 	if(KsnipConfigProvider::instance()->useTabs()) {
-        qDebug() << __FUNCTION__ << " 1 case";
 		return new MultiCaptureHandler(imageAnnotator, toastService, clipboard, new DesktopServiceAdapter, new CaptureTabStateHandler, parent);
 	} else {
-        qDebug() << __FUNCTION__ << " 2 case";
         return new SingleCaptureHandler(imageAnnotator, toastService, clipboard, parent);
 	}
 }

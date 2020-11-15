@@ -46,8 +46,8 @@ UshareUploaderSettings::~UshareUploaderSettings()
 void UshareUploaderSettings::saveSettings()
 {
     // should be both true
-    qDebug() << mConfig->ushareAlwaysCopyToClipboard();
-    qDebug() << mConfig->ushareOpenLinkInBrowser();
+    //qDebug() << mConfig->ushareAlwaysCopyToClipboard();
+    //qDebug() << mConfig->ushareOpenLinkInBrowser();
 }
 
 void UshareUploaderSettings::initGui()
@@ -76,8 +76,8 @@ void UshareUploaderSettings::initGui()
 
 void UshareUploaderSettings::loadConfig()
 {
-    qDebug() << mConfig->ushareOpenLinkInBrowser();
-    qDebug() << mConfig->ushareAlwaysCopyToClipboard();
+    //qDebug() << mConfig->ushareOpenLinkInBrowser();
+    //qDebug() << mConfig->ushareAlwaysCopyToClipboard();
     //mTokenLabel->setText(tr("Token") + ": " + mConfig->ushareUsername());
     QString link =( "<a href=\"https://ushare.phonexa.com/\">link</a> ");
     QString ll =  QString("To login please, use the following %1, copy token and paste in field below").arg(link);

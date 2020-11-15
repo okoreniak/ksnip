@@ -46,8 +46,6 @@ CursorDto WinWrapper::getCursorWithPosition() const
 	GetCursorInfo(&cursorInfo);
 	auto cursorPosition = getCursorPosition(QRect(), cursorInfo);
 	auto cursorPixmap = getCursorPixmap(cursorInfo);
-    qDebug() << __FUNCTION__ << "pixmap  " << cursorPixmap << "cursorpos " << cursorPosition;
-
 	return {cursorPixmap, cursorPosition};
 }
 
@@ -58,7 +56,6 @@ QPoint WinWrapper::getCursorPosition(const QRect &rect, const CURSORINFO &cursor
 
     auto x = cursor.ptScreenPos.x - (int)iconInfo.xHotspot;
     auto y = cursor.ptScreenPos.y - (int)iconInfo.yHotspot;
-    qDebug() << __FUNCTION__ <<  "cursorpos " << QPoint {x,y};
 
     return {x, y};
 }

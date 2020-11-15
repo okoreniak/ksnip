@@ -18,7 +18,6 @@
  */
 
 #include "AbstractRectAreaImageGrabber.h"
-#include <QDebug>
 
 AbstractRectAreaImageGrabber::AbstractRectAreaImageGrabber(AbstractSnippingArea *snippingArea) :
     mSnippingArea(snippingArea),
@@ -88,21 +87,16 @@ void AbstractRectAreaImageGrabber::openSnippingAreaWithBackground(const QPixmap&
 
 QRect AbstractRectAreaImageGrabber::selectedSnippingAreaRect() const
 {
-    qDebug() << __FUNCTION__ ;
     return mSnippingArea->selectedRectArea();
 }
 
 QPixmap AbstractRectAreaImageGrabber::snippingAreaBackground() const
 {
-    qDebug() << __FUNCTION__ ;
-
 	return mSnippingArea->background();
 }
 
 QPixmap AbstractRectAreaImageGrabber::getScreenshotFromRect(const QRect &rect) const
 {
-    qDebug() << __FUNCTION__ ;
-
 	auto screen = QGuiApplication::primaryScreen();
 	auto windowId = QApplication::desktop()->winId();
 	auto rectPosition = rect.topLeft();
@@ -112,17 +106,14 @@ QPixmap AbstractRectAreaImageGrabber::getScreenshotFromRect(const QRect &rect) c
 QPixmap AbstractRectAreaImageGrabber::getScreenshot() const
 {
 	if (isRectAreaCaptureWithBackground()) {
-        qDebug() << __FUNCTION__ << " case 1";
 		return snippingAreaBackground().copy(mCaptureRect);
 	} else {
-        qDebug() << __FUNCTION__ << " case 2";
         return getScreenshotFromRect(mCaptureRect);
 	}
 }
 
 void AbstractRectAreaImageGrabber::setCaptureRectFromCorrectSource()
 {
-    qDebug() << __FUNCTION__ ;
 
 	switch (captureMode()) {
 		case CaptureModes::RectArea:
@@ -153,8 +144,6 @@ bool AbstractRectAreaImageGrabber::isSnippingAreaBackgroundTransparent() const
 
 void AbstractRectAreaImageGrabber::prepareGrab()
 {
-    qDebug() << __FUNCTION__ ;
-
 	if (isRectAreaCaptureWithBackground()) {
 		openSnippingArea();
 	} else {
@@ -191,10 +180,8 @@ bool AbstractRectAreaImageGrabber::shouldCaptureCursor() const
 void AbstractRectAreaImageGrabber::openSnippingArea()
 {    
 	if (isSnippingAreaBackgroundTransparent()) {
-        qDebug() << __FUNCTION__ << " 1";
 		openSnippingAreaWithoutBackground();
 	} else {
-        qDebug() << __FUNCTION__ << " 2";
 
 		auto screenRect = fullScreenRect();
 		auto background = getScreenshotFromRect(screenRect);

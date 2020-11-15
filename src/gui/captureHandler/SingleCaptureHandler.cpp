@@ -18,7 +18,6 @@
  */
 
 #include "SingleCaptureHandler.h"
-#include <QDebug>
 
 SingleCaptureHandler::SingleCaptureHandler(IImageAnnotator *imageAnnotator, IToastService *toastService, IClipboard *clipboard, QWidget *parent) :
 		mImageAnnotator(imageAnnotator),
@@ -81,7 +80,6 @@ void SingleCaptureHandler::innerSave(bool isInstant)
 
 void SingleCaptureHandler::upload()
 {
-    qDebug() << __FUNCTION__ << " called";
 }
 
 void SingleCaptureHandler::load(const CaptureDto &capture)

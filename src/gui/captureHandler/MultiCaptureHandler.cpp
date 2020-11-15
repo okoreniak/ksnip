@@ -18,7 +18,6 @@
  */
 
 #include "MultiCaptureHandler.h"
-#include <QDebug>
 
 MultiCaptureHandler::MultiCaptureHandler(IImageAnnotator *imageAnnotator, IToastService *toastService, IClipboard *clipboard, IDesktopService *desktopService,
 										 ICaptureTabStateHandler *captureTabStateHandler, QWidget *parent) :
@@ -139,7 +138,6 @@ void MultiCaptureHandler::saveAt(int index, bool isInstant)
 
 void MultiCaptureHandler::upload()
 {
-    qDebug() << __FUNCTION__ << " called" ;
 }
 
 void MultiCaptureHandler::load(const CaptureDto &capture)
