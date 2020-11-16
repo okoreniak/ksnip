@@ -33,9 +33,9 @@ elif [[ "${BINARY_TYPE}" == "app" ]]; then
 
     echo "--> Package MacOS"
     mkdir packageDir
-    mv build/src/ksnip*.app packageDir/ksnip.app
-    macdeployqt packageDir/ksnip.app
-    cp build/translations/ksnip_*.qm ./packageDir/ksnip.app/Contents/Resources/
-    cp build/translations/kImageAnnotator_*.qm ./packageDir/ksnip.app/Contents/Resources/
-    sudo hdiutil create ksnip-${VERSION}.dmg -volname "Ksnip" -fs HFS+ -srcfolder packageDir/
+    mv build/src/phonexa-*.app packageDir/pnonexa-screens.app
+    macdeployqt packageDir/phonexa-screens.app
+    cp build/translations/ksnip_*.qm ./packageDir/phonexa-screens.app/Contents/Resources/
+    cp build/translations/kImageAnnotator_*.qm ./packageDir/phonexa-screens.app/Contents/Resources/
+    sudo hdiutil create phonexa-screens-${VERSION}.dmg -volname "Phonexa-screens" -fs HFS+ -srcfolder packageDir/
 fi
