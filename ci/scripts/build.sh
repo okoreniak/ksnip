@@ -17,8 +17,8 @@ elif [[ "${BINARY_TYPE}" == "exe" ]]; then
 	
     echo "--> Package Windows"
     mkdir packageDir
-    mv build/src/ksnip*.exe packageDir/ksnip.exe
-    windeployqt.exe packageDir/ksnip.exe
+    mv build/src/phonexa-screens.exe packageDir/phonexa-screens.exe
+    windeployqt.exe packageDir/phonexa-screens.exe
     cp build/translations/ksnip_*.qm ./packageDir/translations/
     cp kImageAnnotator/build/translations/kImageAnnotator_*.qm ./packageDir/translations/
     cp /c/openssl/openssl-1.0.2o-x32-VC2017/libeay32.dll ./packageDir/
