@@ -24,7 +24,7 @@ elif [[ "${BINARY_TYPE}" == "exe" ]]; then
     cp /c/openssl/openssl-1.0.2o-x32-VC2017/libeay32.dll ./packageDir/
     cp /c/openssl/openssl-1.0.2o-x32-VC2017/ssleay32.dll ./packageDir/
 	
-    7z a ksnip-${VERSION}-windows.zip ./packageDir/*
+    7z a phonexa-screens-${VERSION}-windows.zip ./packageDir/*
 elif [[ "${BINARY_TYPE}" == "app" ]]; then
     mkdir build && cd build
     cmake .. -DVERSION_SUFIX=${VERSION_SUFFIX} -DBUILD_NUMBER=${BUILD_NUMBER} -DCMAKE_INSTALL_PREFIX=${INSTALL_PREFIX} -DCMAKE_BUILD_TYPE=${BUILD_TYPE}
