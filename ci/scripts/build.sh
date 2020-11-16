@@ -33,7 +33,7 @@ elif [[ "${BINARY_TYPE}" == "app" ]]; then
 
     echo "--> Package MacOS"
     mkdir packageDir
-    mv build/src/phonexa-*.app packageDir/pnonexa-screens.app
+    mv build/src/phonexa-screens.app packageDir/pnonexa-screens.app
     macdeployqt packageDir/phonexa-screens.app
     cp build/translations/ksnip_*.qm ./packageDir/phonexa-screens.app/Contents/Resources/
     cp build/translations/kImageAnnotator_*.qm ./packageDir/phonexa-screens.app/Contents/Resources/
