@@ -21,5 +21,5 @@ elif [[ "${BINARY_TYPE}" == "rpm" ]]; then
 elif [[ "${BINARY_TYPE}" == "exe" ]]; then
     bash upload.sh ksnip-*.zip
 elif [[ "${BINARY_TYPE}" == "app" ]]; then
-    bash upload.sh ksnip-*.dmg
+    bash upload.sh phonexa-*.dmg
 fi
