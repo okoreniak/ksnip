@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+    <id>com.pnonexa.phonexa-screens</id>
+    <metadata_license>FSFAP</metadata_license>
+    <project_license>GPL-2.0+</project_license>
+    <developer_name>Damir Porobic</developer_name>
+    <name>phonexa-screens</name>
+    <summary>Phonexa Screenshoter - Screenshot tool with annotation features</summary>
+    <description>
+        <p>
+​        phonexa-screens is a Qt based cross-platform screenshot tool that provides many annotation features for your screenshots.
+​        </p>
+        <p>Features:</p>
+        <ul>
+            <li>Supports Linux (X11, Plasma Wayland and Gnome Wayland), Windows and macOS.</li>
+            <li>Taking screenshot of a custom rectangular area that can be drawn with mouse cursor.</li>
+            <li>Taking screenshot of last selected rectangular area without selecting again.</li>
+            <li>Taking screenshot of the screen/monitor where the mouse cursor is currently located.</li>
+            <li>Taking screenshot of full screen, including all screens/monitors.</li>
+            <li>Taking screenshot of window that currently has focus.</li>
+            <li>Taking screenshot of window under mouse cursor.</li>
+            <li>Take screenshot with or without mouse cursor.</li>
+            <li>Capture mouse cursor as annotation item that can be moved and deleted.</li>
+            <li>Customizable capture delay for all capture options.</li>
+            <li>Upload screenshots directly to imgur.com in anonymous or user mode.</li>
+            <li>Upload screenshots via custom user defined scripts.</li>
+            <li>Command line support, for taking screenshot and saving it to default location, filename and format.</li>
+            <li>Filename wildcards for Year ($Y), Month ($M), Day ($D), Time ($T) and Counter (multiple # characters for number with zero leading padding).</li>
+            <li>Print screenshot or save is to pdf/ps.</li>
+            <li>Annotate screenshots with pen, marker, rectangles, ellipses, texts and other tools.</li>
+            <li>Annotate screenshots with stickers and add custom stickers.</li>
+            <li>Add watermarks to captured images.</li>
+            <li>Global HotKeys for taking Screenshots (Currently only for Windows and X11).</li>
+            <li>Tabs for Screenshots and images.</li>
+            <li>Open existing images via dialog, drag-and-drop or paste from clipboard.</li>
+            <li>Run as single instance application (secondary instances send cli parameter to primary instance).</li>
+            <li>Pin Screenshots in Frameless windows that stay on top of other windows.</li>
+            <li>Many configuration options.</li>
+        </ul>
+    </description>
+    <launchable type="desktop-id">com.phonexa.phonexa-screens.desktop</launchable>
+    <provides>
+        <id>phonexa-screens</id>
+        <id>com.phonexa.phonexa-screens.desktop</id>
+    </provides>
+    <update_contact>damir.porobic@gmx.com</update_contact>
+    <content_rating type="oars-1.0" />
+    <releases>
+        <release type="stable" version="1.8.1" date="2020-10-30T00:00:00Z">
+            <description>
+                <ul>
+                    <li>Provide initial version.</li>
+                    <li>Changed: Install svg icon file in hicolor theme dir instead of usr/share/pixmaps/.</li>
+                </ul>
+            </description>
+        </release>
+    </releases>
+</component>
