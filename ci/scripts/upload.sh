@@ -17,7 +17,7 @@ if [[ "${BINARY_TYPE}" == "AppImage" ]]; then
 elif [[ "${BINARY_TYPE}" == "deb" ]]; then
     bash upload.sh phonexa-*.deb
 elif [[ "${BINARY_TYPE}" == "rpm" ]]; then
-    bash upload.sh ksnip-*.rpm
+    bash upload.sh phonexa-*.rpm
 elif [[ "${BINARY_TYPE}" == "exe" ]]; then
     bash upload.sh phonexa-*.zip
 elif [[ "${BINARY_TYPE}" == "app" ]]; then

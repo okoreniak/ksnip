@@ -7,8 +7,8 @@ elif [[ "${BINARY_TYPE}" == "deb" ]]; then
     mv phonexa-screens_*.deb phonexa-screens-${VERSION}.deb
 elif [[ "${BINARY_TYPE}" == "rpm" ]]; then
     docker exec build-container bash -c "source ci/scripts/rpm/build_rpm.sh"
-    sudo chown -R 2000:2000 ksnip-${VERSION_NUMBER}
-    mv ksnip-${VERSION_NUMBER}/RPMS/x86_64/ksnip-*.rpm ksnip-${VERSION}.rpm
+    sudo chown -R 2000:2000 phonexa-screens-${VERSION_NUMBER}
+    mv phonexa-screens-${VERSION_NUMBER}/RPMS/x86_64/phonexa-*.rpm phonexa-screens-${VERSION}.rpm
 elif [[ "${BINARY_TYPE}" == "exe" ]]; then
     mkdir build && cd build
     cmake .. -G"NMake Makefiles" -DCMAKE_CXX_COMPILER=cl -DVERSION_SUFIX=${VERSION_SUFFIX} -DBUILD_NUMBER=${BUILD_NUMBER} -DCMAKE_INSTALL_PREFIX=${INSTALL_PREFIX} -DCMAKE_BUILD_TYPE=${BUILD_TYPE}

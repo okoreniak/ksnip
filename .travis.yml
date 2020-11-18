@@ -38,14 +38,14 @@ jobs:
       install: source ci/scripts/setup.sh
       script: source ci/scripts/build.sh
       after_success: source ci/scripts/upload.sh
-#   - stage: build
-#      os: linux
-#      env: BINARY_TYPE=rpm
-#      services: docker
-#      before_install: source ci/scripts/bootstrap.sh
-#      install: source ci/scripts/setup.sh
-#      script: source ci/scripts/build.sh
-#      after_success: source ci/scripts/upload.sh
+   - stage: build
+      os: linux
+      env: BINARY_TYPE=rpm
+      services: docker
+      before_install: source ci/scripts/bootstrap.sh
+      install: source ci/scripts/setup.sh
+      script: source ci/scripts/build.sh
+      after_success: source ci/scripts/upload.sh
     - stage: build
       os: windows
       env: BINARY_TYPE=exe
