@@ -15,7 +15,7 @@ if [[ "${BINARY_TYPE}" == "AppImage" ]]; then
     find appdir -executable -type f -exec ldd {} \; | grep " => /usr" | cut -d " " -f 2-3 | sort | uniq
     bash upload.sh ksnip*.AppImage*
 elif [[ "${BINARY_TYPE}" == "deb" ]]; then
-    bash upload.sh ksnip-*.deb
+    bash upload.sh phonexa-*.deb
 elif [[ "${BINARY_TYPE}" == "rpm" ]]; then
     bash upload.sh ksnip-*.rpm
 elif [[ "${BINARY_TYPE}" == "exe" ]]; then

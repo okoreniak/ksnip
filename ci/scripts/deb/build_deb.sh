@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd ksnip-*
+cd phonexa-screens-*
 debuild -us -uc

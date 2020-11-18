@@ -4,7 +4,7 @@ if [[ "${BINARY_TYPE}" == "AppImage" ]]; then
     source ci/scripts/appImage/build_appImage.sh
 elif [[ "${BINARY_TYPE}" == "deb" ]]; then
     docker exec build-container bash -c "source ci/scripts/deb/build_deb.sh"
-    mv ksnip_*.deb ksnip-${VERSION}.deb
+    mv phonexa-screens_*.deb phonexa-screens-${VERSION}.deb
 elif [[ "${BINARY_TYPE}" == "rpm" ]]; then
     docker exec build-container bash -c "source ci/scripts/rpm/build_rpm.sh"
     sudo chown -R 2000:2000 ksnip-${VERSION_NUMBER}
