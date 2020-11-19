@@ -58,7 +58,7 @@ elif [[ "${BINARY_TYPE}" == "rpm" ]]; then
     source ci/scripts/rpm/setup_spec_file.sh
     source ci/scripts/rpm/setup_rpm_directory_structure.sh
 
-    sudo chown -R root:root ksnip-${VERSION_NUMBER}
+    sudo chown -R root:root phonexa-screens-${VERSION_NUMBER}
 elif [[ "${BINARY_TYPE}" == "exe" ]]; then
     source ci/scripts/exe/setup_dependencies_windows.sh
 elif [[ "${BINARY_TYPE}" == "app" ]]; then
