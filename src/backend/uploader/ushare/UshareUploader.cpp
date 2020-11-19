@@ -95,7 +95,7 @@ void UshareUploader::UshareError(const QString &message)
     qCritical("MainWindow: Ushare uploader returned error: '%s'", qPrintable(message));
     auto ok = false;
     ok = QMessageBox::warning(QApplication::activeWindow(), "Error", message);
-	emit finished(UploadResult(UploadStatus::NoError, type(), message));
+    //emit finished(UploadResult(UploadStatus::WebError, type(), message));
 }
 
 void UshareUploader::UshareTokenUpdated(const QString &accessToken, const QString &refreshToken, const QString &username)
