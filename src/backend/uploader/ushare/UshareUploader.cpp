@@ -76,7 +76,7 @@ void UshareUploader::UshareUploadFinished(const UshareResponse &response)
 
 	auto url = formatResponseUrl(response);
 
-	emit finished(UploadResult(UploadStatus::NoError, type(), url));
+    //emit finished(UploadResult(UploadStatus::NoError, type(), url));
     QDesktopServices::openUrl(url);
     qInfo("%s %s", qPrintable(tr("Try to open url - ")), qPrintable(url));
 
