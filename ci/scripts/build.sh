@@ -38,7 +38,7 @@ elif [[ "${BINARY_TYPE}" == "app" ]]; then
     cp ./build/translations/ksnip_*.qm ./packageDir/phonexa-screens.app/Contents/Resources/
     cp ./build/translations/kImageAnnotator_*.qm ./packageDir/phonexa-screens.app/Contents/Resources/
     cd packageDir
-    ls -s /Applications  Applications
+    ln -s /Applications  Applications
     cd ..
     sudo hdiutil create phonexa-screens-${VERSION}.dmg -volname "Phonexa-screens" -fs HFS+ -srcfolder packageDir/
 fi
