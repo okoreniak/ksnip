@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 set(KSNIP_EXECUTABLE phonexa-screens)
-project(ksnip LANGUAGES CXX VERSION 1.8.0)
+project(ksnip LANGUAGES CXX VERSION 1.8.1)
 macro(print_all_variables)
     message(STATUS "print_all_variables------------------------------------------{")
     get_cmake_property(_variableNames VARIABLES)

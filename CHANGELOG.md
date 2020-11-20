@@ -1,5 +1,8 @@
 # Change log
 
+## Release 1.8.1
+* New: Added Ushare upload provider and fixed 152 issue. ([#152](https://github.com/ksnip/ksnip/issues/152))
+
 ## Release 1.8.0
 * New: Pin screenshots in frameless windows that stay in foreground. ([#365](https://github.com/ksnip/ksnip/issues/365))
 * New: Support for unit tests. ([#80](https://github.com/ksnip/ksnip/issues/80))
