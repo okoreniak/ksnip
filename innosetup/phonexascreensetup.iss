@@ -2,11 +2,13 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Phonexa Screenshoter"
-#define MyAppVersion "1.1"
+#define MyAppVersion "1.8.1"
 #define MyAppPublisher "Phonexa Inc."
 #define MyAppURL "https://phonexa.com/"
 #define MyAppExeName "phonexa-screens.exe"
-#define SrcFilesRoot  "phonexa-screens-1.8.0-continuous-windows"
+#define SrcPrefix "phonexa-screens-"
+#define SrcSuffix "-continuous-windows"
+//{#SrcPrefix}{#MyAppVersion}{#SrcSuffix}
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
@@ -21,6 +23,7 @@ AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 DefaultDirName={autopf}\{#MyAppName}
 DisableProgramGroupPage=yes
+
 ;
 ;LicenseFile=C:\InnoSetups\license.txt
 ;InfoBeforeFile=C:\InnoSetups\infobefore.txt
@@ -30,7 +33,7 @@ PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
 OutputDir=buildsetup
 OutputBaseFilename=phonexa_screens_setup{#MyAppVersion}
-SetupIconFile=C:\InnoSetups\phonexa_logo_128.ico
+SetupIconFile=phonexa_logo_128.ico
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
@@ -46,28 +49,28 @@ Name: "ukrainian"; MessagesFile: "compiler:Languages\Ukrainian.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "{#SrcFilesRoot}\phonexa-screens.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#SrcFilesRoot}\bearer\*"; DestDir: "{app}\bearer\"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "{#SrcFilesRoot}\iconengines\*"; DestDir: "{app}\iconengines\"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "{#SrcFilesRoot}\imageformats\*"; DestDir: "{app}\imageformats\"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "{#SrcFilesRoot}\platforms\*"; DestDir: "{app}\platforms\"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "{#SrcFilesRoot}\printsupport\*"; DestDir: "{app}\printsupport\"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "{#SrcFilesRoot}\translations\*"; DestDir: "{app}\translations\"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "{#SrcFilesRoot}\D3Dcompiler_47.dll"; DestDir: "{app}\"; Flags: ignoreversion
-Source: "{#SrcFilesRoot}\libeay32.dll"; DestDir: "{app}\"; Flags: ignoreversion
-Source: "{#SrcFilesRoot}\libEGL.dll"; DestDir: "{app}\"; Flags: ignoreversion
-Source: "{#SrcFilesRoot}\libGLESV2.dll"; DestDir: "{app}\"; Flags: ignoreversion
-Source: "{#SrcFilesRoot}\Qt5Core.dll"; DestDir: "{app}\"; Flags: ignoreversion
-Source: "{#SrcFilesRoot}\Qt5Gui.dll"; DestDir: "{app}\"; Flags: ignoreversion
-Source: "{#SrcFilesRoot}\Qt5Network.dll"; DestDir: "{app}\"; Flags: ignoreversion
-Source: "{#SrcFilesRoot}\Qt5PrintSupport.dll"; DestDir: "{app}\"; Flags: ignoreversion
-Source: "{#SrcFilesRoot}\Qt5Svg.dll"; DestDir: "{app}\"; Flags: ignoreversion
-Source: "{#SrcFilesRoot}\Qt5Widgets.dll"; DestDir: "{app}\"; Flags: ignoreversion
-Source: "{#SrcFilesRoot}\Qt5WinExtras.dll"; DestDir: "{app}\"; Flags: ignoreversion
-Source: "{#SrcFilesRoot}\Qt5Xml.dll"; DestDir: "{app}\"; Flags: ignoreversion
-Source: "{#SrcFilesRoot}\ssleay32.dll"; DestDir: "{app}\"; Flags: ignoreversion
-Source: "{#SrcFilesRoot}\Qt5WinExtras.dll"; DestDir: "{app}\"; Flags: ignoreversion
-Source: "{#SrcFilesRoot}\ssleay32.dll"; DestDir: "{app}\"; Flags: ignoreversion
+Source: "{#SrcPrefix}{#MyAppVersion}{#SrcSuffix}\phonexa-screens.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#SrcPrefix}{#MyAppVersion}{#SrcSuffix}\bearer\*"; DestDir: "{app}\bearer\"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "{#SrcPrefix}{#MyAppVersion}{#SrcSuffix}\iconengines\*"; DestDir: "{app}\iconengines\"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "{#SrcPrefix}{#MyAppVersion}{#SrcSuffix}\imageformats\*"; DestDir: "{app}\imageformats\"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "{#SrcPrefix}{#MyAppVersion}{#SrcSuffix}\platforms\*"; DestDir: "{app}\platforms\"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "{#SrcPrefix}{#MyAppVersion}{#SrcSuffix}\printsupport\*"; DestDir: "{app}\printsupport\"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "{#SrcPrefix}{#MyAppVersion}{#SrcSuffix}\translations\*"; DestDir: "{app}\translations\"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "{#SrcPrefix}{#MyAppVersion}{#SrcSuffix}\D3Dcompiler_47.dll"; DestDir: "{app}\"; Flags: ignoreversion
+Source: "{#SrcPrefix}{#MyAppVersion}{#SrcSuffix}\libeay32.dll"; DestDir: "{app}\"; Flags: ignoreversion
+Source: "{#SrcPrefix}{#MyAppVersion}{#SrcSuffix}\libEGL.dll"; DestDir: "{app}\"; Flags: ignoreversion
+Source: "{#SrcPrefix}{#MyAppVersion}{#SrcSuffix}\libGLESV2.dll"; DestDir: "{app}\"; Flags: ignoreversion
+Source: "{#SrcPrefix}{#MyAppVersion}{#SrcSuffix}\Qt5Core.dll"; DestDir: "{app}\"; Flags: ignoreversion
+Source: "{#SrcPrefix}{#MyAppVersion}{#SrcSuffix}\Qt5Gui.dll"; DestDir: "{app}\"; Flags: ignoreversion
+Source: "{#SrcPrefix}{#MyAppVersion}{#SrcSuffix}\Qt5Network.dll"; DestDir: "{app}\"; Flags: ignoreversion
+Source: "{#SrcPrefix}{#MyAppVersion}{#SrcSuffix}\Qt5PrintSupport.dll"; DestDir: "{app}\"; Flags: ignoreversion
+Source: "{#SrcPrefix}{#MyAppVersion}{#SrcSuffix}\Qt5Svg.dll"; DestDir: "{app}\"; Flags: ignoreversion
+Source: "{#SrcPrefix}{#MyAppVersion}{#SrcSuffix}\Qt5Widgets.dll"; DestDir: "{app}\"; Flags: ignoreversion
+Source: "{#SrcPrefix}{#MyAppVersion}{#SrcSuffix}\Qt5WinExtras.dll"; DestDir: "{app}\"; Flags: ignoreversion
+Source: "{#SrcPrefix}{#MyAppVersion}{#SrcSuffix}\Qt5Xml.dll"; DestDir: "{app}\"; Flags: ignoreversion
+Source: "{#SrcPrefix}{#MyAppVersion}{#SrcSuffix}\ssleay32.dll"; DestDir: "{app}\"; Flags: ignoreversion
+Source: "{#SrcPrefix}{#MyAppVersion}{#SrcSuffix}\Qt5WinExtras.dll"; DestDir: "{app}\"; Flags: ignoreversion
+Source: "{#SrcPrefix}{#MyAppVersion}{#SrcSuffix}\ssleay32.dll"; DestDir: "{app}\"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]

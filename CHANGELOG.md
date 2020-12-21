@@ -1,5 +1,8 @@
 # Change log
 
+## Release 1.8.2
+* New: New: Small improvements.
+
 ## Release 1.8.1
 * New: Added Ushare upload provider and fixed 152 issue. ([#152](https://github.com/ksnip/ksnip/issues/152))
 

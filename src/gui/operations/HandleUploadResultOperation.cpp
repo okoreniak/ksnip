@@ -18,6 +18,8 @@
  */
 
 #include "HandleUploadResultOperation.h"
+#include <QDebug>
+#include <QMessageBox>
 
 HandleUploadResultOperation::HandleUploadResultOperation(const UploadResult &result, TrayIcon *trayIcon) :
 	mUploadResult(result),
@@ -47,6 +49,7 @@ bool HandleUploadResultOperation::execute()
 
 void HandleUploadResultOperation::handleUshareResult()
 {
+    //qDebug() << __FUNCTION__;
     if(mUploadResult.status == UploadStatus::NoError) {
         if (mConfig->ushareOpenLinkInBrowser()) {
             OpenUrl(mUploadResult.content);
@@ -141,7 +144,8 @@ void HandleUploadResultOperation::handleUploadError()
 			notifyFailedUpload(tr("Process write error."));
 			break;
 		case UploadStatus::WebError:
-			notifyFailedUpload(tr("Web error, check console output."));
+            notifyFailedUpload(tr("Web error, check console output.\n") +
+                               mUploadResult.content);
 			break;
 		case UploadStatus::UnknownError:
 			notifyFailedUpload(tr("Unknown process error."));
@@ -156,5 +160,6 @@ void HandleUploadResultOperation::notifyFailedUpload(const QString &message) con
 {
 	NotifyOperation operation(mTrayIcon, tr("Upload Failed"), message, NotificationTypes::Warning);
 	operation.execute();
+    QMessageBox::warning(QApplication::activeWindow(), "Error", message);
 }
 

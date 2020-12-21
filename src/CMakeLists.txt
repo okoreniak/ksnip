@@ -165,13 +165,13 @@ elseif (APPLE)
 
         set(MACOSX_BUNDLE_EXECUTABLE_NAME "${KSNIP_EXECUTABLE}")
         set(MACOSX_BUNDLE_GUI_IDENTIFIER "org.phonexa.${KSNIP_EXECUTABLE}")
-	set(MACOSX_BUNDLE_ICON_FILE "ksnip.icns")
+    set(MACOSX_BUNDLE_ICON_FILE "ksnip.icns")
 	set(MACOSX_BUNDLE_INFO_STRING "Cross-Platform Screenshot and Annotation Tool")
-	set(MACOSX_BUNDLE_SHORT_VERSION_STRING ${VERSION})
+    set(MACOSX_BUNDLE_SHORT_VERSION_STRING ${KSNIP_VERSION})
 	set(MACOSX_BUNDLE_LONG_VERSION_STRING ${KSNIP_VERSION})
 
 	set(MACOSX_ICON ${CMAKE_SOURCE_DIR}/icons/ksnip.icns backend/imageGrabber/AbstractImageGrabber.cpp backend/imageGrabber/AbstractImageGrabber.h)
-        set_source_files_properties(${MACOSX_ICON} PROPERTIES MACOSX_PACKAGE_LOCATION "../Resources")
+        set_source_files_properties(${MACOSX_ICON} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
 
         add_executable(${KSNIP_EXECUTABLE} MACOSX_BUNDLE ${KSNIP_SRCS} ${CMAKE_SOURCE_DIR}/icons/ksnip_icons.qrc ${MACOSX_ICON})
 else()

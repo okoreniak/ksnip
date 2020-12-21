@@ -173,7 +173,7 @@ void KsnipConfig::setSaveDirectory(const QString& path)
 
 QString KsnipConfig::saveFilename() const
 {
-	auto defaultFilename = QStringLiteral("ksnip_$Y$M$D-$T");
+    auto defaultFilename = QStringLiteral("phonexa_$Y$M$D-$T");
 	auto filename = loadValue(KsnipConfigOptions::saveFilenameString(), defaultFilename).toString();
 	if (filename.isEmpty() || filename.isNull()) {
 		filename = defaultFilename;

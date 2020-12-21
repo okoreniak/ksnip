@@ -28,10 +28,50 @@
 #include "src/bootstrapper/BootstrapperFactory.h"
 #include "src/backend/config/KsnipConfigProvider.h"
 
+#include <QKeyEvent>
+#include <QHideEvent>
+#include <QActionEvent>
+
+
+class Application final : public QApplication
+{
+public:
+    Application(int &argc, char **argv) : QApplication(argc, argv) {}
+    virtual bool notify(QObject *receiver, QEvent *event) override
+    {
+        //qDebug() << __FUNCTION__ << Qt::endl <<  event;
+        auto event_type = event->type();
+        if (event_type == QEvent::ApplicationActivate)
+        {
+            auto windows = topLevelWindows();
+            auto widgets = topLevelWidgets();
+            foreach(auto item, windows)
+            {
+                MainWindow* wnd = dynamic_cast<MainWindow*>(item);
+                if (wnd)
+                {
+                    wnd->showNormal();
+                    break;
+                }
+            }
+            foreach(auto w, widgets)
+            {
+                MainWindow* wnd = dynamic_cast<MainWindow*>(w);
+                if (wnd)
+                    wnd->showNormal();
+            }
+
+        }
+        return QApplication::notify(receiver,event);
+    }
+};
+
 
 int main(int argc, char** argv)
 {
-    QApplication app(argc, argv);
+    //QApplication app(argc, argv);
+    Application app(argc, argv);
+
     app.setAttribute(Qt::AA_UseHighDpiPixmaps);
     app.setOrganizationName(QStringLiteral("Phonexa"));
     app.setOrganizationDomain(QStringLiteral("phonexa.com"));
