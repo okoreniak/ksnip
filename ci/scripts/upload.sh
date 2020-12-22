@@ -12,9 +12,7 @@ fi
 
 
 if [[ "${BINARY_TYPE}" == "AppImage" ]]; then
-    ls -l
     find appdir -executable -type f -exec ldd {} \; | grep " => /usr" | cut -d " " -f 2-3 | sort | uniq
-    ls -l
     bash upload.sh phonexa*.AppImage*
 elif [[ "${BINARY_TYPE}" == "deb" ]]; then
     bash upload.sh phonexa-*.deb
