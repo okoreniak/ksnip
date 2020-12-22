@@ -22,13 +22,13 @@ jobs:
 #        - mkdir build ; cd build
 #        - cmake .. -DBUILD_TESTS=ON ; make
 #        - xvfb-run --auto-servernum --server-num=1 --server-args="-screen 0 1024x768x24" make test CTEST_OUTPUT_ON_FAILURE=1
-#    - stage: build
-#      os: linux
-#      env: BINARY_TYPE=AppImage
-#      before_install: source ci/scripts/bootstrap.sh
-#      install: source ci/scripts/setup.sh
-#      script: source ci/scripts/build.sh
-#      after_success: source ci/scripts/upload.sh
+    - stage: build
+      os: linux
+      env: BINARY_TYPE=AppImage
+      before_install: source ci/scripts/bootstrap.sh
+      install: source ci/scripts/setup.sh
+      script: source ci/scripts/build.sh
+      after_success: source ci/scripts/upload.sh
     - stage: build
       os: linux
       env: BINARY_TYPE=deb
